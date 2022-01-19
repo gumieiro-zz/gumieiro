@@ -478,7 +478,7 @@
               <li class="flex">Mercado R$ 223,50</li>
               <li class="flex">Farmácia R$ 223,50</li>
             </ul>
-          </div>
+          </div>  
         </div>
       </div>
     </div>
@@ -487,11 +487,9 @@
 
 <script>
 import { defineComponent } from "vue";
-import JetApplicationLogo from "@/Jetstream/ApplicationLogo.vue";
 
 export default defineComponent({
   components: {
-    JetApplicationLogo,
   },
 });
 </script>

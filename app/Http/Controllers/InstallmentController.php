@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AccountYield;
+use App\Models\Installment;
 use Illuminate\Http\Request;
 
-class AccountYieldController extends Controller
+class InstallmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class AccountYieldController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\AccountYield  $accountYield
+     * @param  \App\Models\Installment  $installment
      * @return \Illuminate\Http\Response
      */
-    public function show(AccountYield $accountYield)
+    public function show(Installment $installment)
     {
         //
     }
@@ -52,10 +52,10 @@ class AccountYieldController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\AccountYield  $accountYield
+     * @param  \App\Models\Installment  $installment
      * @return \Illuminate\Http\Response
      */
-    public function edit(AccountYield $accountYield)
+    public function edit(Installment $installment)
     {
         //
     }
@@ -64,10 +64,10 @@ class AccountYieldController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AccountYield  $accountYield
+     * @param  \App\Models\Installment  $installment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AccountYield $accountYield)
+    public function update(Request $request, Installment $installment)
     {
         //
     }
@@ -75,10 +75,10 @@ class AccountYieldController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\AccountYield  $accountYield
+     * @param  \App\Models\Installment  $installment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AccountYield $accountYield)
+    public function destroy(Installment $installment)
     {
         //
     }

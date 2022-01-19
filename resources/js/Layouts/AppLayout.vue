@@ -22,17 +22,17 @@
                                 <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </jet-nav-link>
-                                <jet-nav-link :href="'#'" :active="false">
+                                <jet-nav-link :href="route('account.index')" :active="route().current('account.index')">
                                     Contas
                                 </jet-nav-link>
-                                <jet-nav-link :href="'#'" :active="false">
+                                <jet-nav-link :href="route('card.index')" :active="route().current('account')">
                                     Cartões
                                 </jet-nav-link>
                                 <jet-nav-link :href="'#'" :active="false">
-                                    Investimentos
+                                    Investimentos (em breve)
                                 </jet-nav-link>
                                 <jet-nav-link :href="'#'" :active="false">
-                                    Plano de Gastos
+                                    Plano de Gastos (em breve)
                                 </jet-nav-link>
                             </div>
                         </div>

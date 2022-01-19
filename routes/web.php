@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Foundation\Application;
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\CardController;
+use App\Http\Controllers\DefaultRoutesController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +16,10 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+Route::get('/', [DefaultRoutesController::class, 'welcome']);
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/dashboard', [DefaultRoutesController::class, 'dashboard'])->name('dashboard');
+    Route::resource('account', AccountController::class);    
+    Route::resource('card', CardController::class);    
+});

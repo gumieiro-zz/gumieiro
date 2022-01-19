@@ -1,5 +1,5 @@
 <template>
-    <Head title="Privacy Policy" />
+    <Head title="Política de Privacidade" />
 
     <div class="font-sans text-gray-900 antialiased">
         <div class="pt-4 bg-gray-100">
